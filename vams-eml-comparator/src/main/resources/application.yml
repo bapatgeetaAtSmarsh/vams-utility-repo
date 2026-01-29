@@ -1,4 +1,4 @@
 compare:
-  encryptedDir: "data/encrypted"
-  decryptedDir: "data/decrypted"
-  outputDir: "data/output"   # optional; defaults to ./output if omitted
+  encryptedDir: "data/comparator/encrypted"
+  decryptedDir: "data/comparator/decrypted"
+  outputDir: "data/comparator/output"   # optional; defaults to ./output if omitted

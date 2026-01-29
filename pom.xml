@@ -14,6 +14,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>vams-eml-comparator</module>
+		<module>vams-byok-encrypter</module>
 	</modules>
 	<scm>
 		<tag>HEAD</tag>

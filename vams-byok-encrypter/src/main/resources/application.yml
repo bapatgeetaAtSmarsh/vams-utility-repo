@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: eml-encryptor
+
+telemessage:
+  rsa:
+    public-key-path: "data/keys/PublicKey.pem"
+    private-key-path: "data/keys/PrivateKey.pem"
+
+  # Folder containing input .eml files (read-only)
+  input-folder: "data/encrypter/input"
+
+  # Folder where encrypted .eml files will be written
+  output-folder: "data/encrypter/output"
+
+  # Becomes: X-TELEMESSAGE-ENC-KEY-ID: <value>
+  enc-key-id: "1FEF003C9166AD229FB00F5F25DCA762999DBF396DB60BBC3302A7E13DDDD0ED"
+
+  # Becomes: X-TELEMESSAGE-OriginalMesageIntegrity: <value>
+  original-mesage-integrity: "24602ae223611850ed78d2ff3cd69d7b5692d553365369e5f528df48a5739680"
