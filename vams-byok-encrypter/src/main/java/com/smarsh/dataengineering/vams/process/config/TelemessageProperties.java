@@ -1,4 +1,4 @@
-package com.smarsh.dataengineering.byok.encrypter.config;
+package com.smarsh.dataengineering.vams.process.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.smarsh.dataengineering.byok.encrypter.eml;
+package com.smarsh.dataengineering.vams.process.eml;
 
 
 
@@ -16,14 +16,13 @@ import java.io.OutputStream;
 import java.nio.file.*;
 import java.security.PrivateKey;
 import java.security.PublicKey;
-import java.util.Arrays;
 import java.util.Base64;
 import java.util.Comparator;
 import java.util.Properties;
 
-import com.smarsh.dataengineering.byok.encrypter.config.TelemessageProperties;
-import com.smarsh.dataengineering.byok.encrypter.crypto.CryptoService;
-import com.smarsh.dataengineering.byok.encrypter.crypto.RsaKeyLoader;
+import com.smarsh.dataengineering.vams.process.config.TelemessageProperties;
+import com.smarsh.dataengineering.vams.process.crypto.CryptoService;
+import com.smarsh.dataengineering.vams.process.crypto.RsaKeyLoader;
 
 @Service
 public class EmlEncryptionService {

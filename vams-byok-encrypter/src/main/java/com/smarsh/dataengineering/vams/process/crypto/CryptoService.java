@@ -1,4 +1,4 @@
-package com.smarsh.dataengineering.byok.encrypter.crypto;
+package com.smarsh.dataengineering.vams.process.crypto;
 
 import org.springframework.stereotype.Service;
 

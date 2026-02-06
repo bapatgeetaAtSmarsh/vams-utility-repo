@@ -15,6 +15,8 @@
 	<modules>
 		<module>vams-eml-comparator</module>
 		<module>vams-byok-encrypter</module>
+		<module>vams-process-util</module>
+		<module>vams-jobs-setup</module>
 	</modules>
 	<scm>
 		<tag>HEAD</tag>
