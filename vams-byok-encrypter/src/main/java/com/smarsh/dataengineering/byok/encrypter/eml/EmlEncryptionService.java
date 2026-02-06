@@ -216,8 +216,8 @@ public class EmlEncryptionService {
 		byte[] ct = crypto.encryptAesCbc(plain, aesKey, iv);
 
 		String contentType = original.getContentType();
-		String base64Ct = Base64.getEncoder().encodeToString(ct);
-		ByteArrayDataSource ds = new ByteArrayDataSource(base64Ct, contentType);
+		Object content = contentType.startsWith("text/") ? Base64.getEncoder().encodeToString(ct).getBytes(java.nio.charset.StandardCharsets.UTF_8) : ct;
+		ByteArrayDataSource ds = new ByteArrayDataSource((byte[]) content, contentType);
 		leaf.setDataHandler(new DataHandler(ds));
 
 		// Make sure it's transferable
@@ -231,8 +231,8 @@ public class EmlEncryptionService {
 		byte[] ct = crypto.encryptAesCbc(plain, aesKey, iv);
 
 		String contentType = leaf.getContentType();
-		String base64Ct = Base64.getEncoder().encodeToString(ct);
-		ByteArrayDataSource ds = new ByteArrayDataSource(base64Ct, contentType);
+		Object content = contentType.startsWith("text/") ? Base64.getEncoder().encodeToString(ct).getBytes(java.nio.charset.StandardCharsets.UTF_8) : ct;
+		ByteArrayDataSource ds = new ByteArrayDataSource((byte[]) content, contentType);
 		leaf.setDataHandler(new DataHandler(ds));
 		leaf.setHeader("Content-Transfer-Encoding", "base64");
 	}
